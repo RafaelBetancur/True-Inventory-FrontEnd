@@ -1,0 +1,6 @@
+.input {
+    padding: var(--padding, 0px 8px);
+    font-size: var(--fontSize, 16px);
+    height: var(--height, 10vh);
+    width: var(--width, 100%);
+  }
