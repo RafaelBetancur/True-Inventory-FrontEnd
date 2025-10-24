@@ -1,0 +1,32 @@
+.tag {
+  display: inline-flex; /* 👈 importante para que solo ocupe el contenido */
+  align-items: center;
+  justify-content: center;
+  padding: 4px 12px;
+  margin: 4px 6px 0 0;
+  border-radius: 12px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  border: 1px solid;
+  border-color: var(--borderColor,#42424280);
+  background-color: var(--backgroundColor,#f5f5f5);
+  color: var(--color,#333);
+
+  /* Control del tamaño */
+  width: auto;        /* Ajusta del texto */
+  max-width: max-content; /* Para que no se estire */
+  min-width: 0;       /* Evita que se contraiga */
+
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.tag:hover {
+  background-color: #e0e0e0;
+  border-color: #ccc;
+}
+
+.tag:active {
+  transform: scale(0.96);
+}
