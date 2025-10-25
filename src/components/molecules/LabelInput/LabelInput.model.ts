@@ -6,6 +6,5 @@ export interface LabelInputProps {
     color?: string;
     fontSize?: string;
     padding?: string;
-    fontFamily?: string;
     bgColor?: string;
 }

@@ -6,7 +6,6 @@ export const Label = ({
     height,
     color,
     fontSize,
-    fontFamily,
     fontWeight,
     padding,
     textLabel
@@ -16,7 +15,6 @@ export const Label = ({
         "--height": height,
         "--color": color,
         "--fontSize": fontSize,
-        "--fontFamily": fontFamily,
         "--padding": padding,
         "--fontWeight":fontWeight
     } as React.CSSProperties;

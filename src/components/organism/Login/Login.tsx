@@ -20,7 +20,6 @@ export const Login = ({
             <div className={styles.inputLabel}>
               <Label
                 textLabel="Usuario"
-                fontFamily="Open Sans"
                 fontSize="16px"
               />
               <Input
@@ -30,7 +29,6 @@ export const Login = ({
               />
               <Label
                 textLabel="Contraseña"
-                fontFamily="Open Sans"
                 fontSize="16px"
               />
               <Input

@@ -6,5 +6,4 @@ export interface InputProps {
   color?: string;
   fontSize?: string;
   padding?: string;
-  fontFamily?: string;
 }

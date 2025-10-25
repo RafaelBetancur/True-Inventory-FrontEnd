@@ -14,7 +14,7 @@ export const Title = ({
         "--color":color,
         "--width":width,
         "--height":height
-    };
+    } as React.CSSProperties;
     return (
         <>
             <div style={styleProperties} className={styles.container}>

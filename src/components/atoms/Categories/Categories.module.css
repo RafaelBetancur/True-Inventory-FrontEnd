@@ -15,8 +15,7 @@
 
   /* Control del tamaño */
   width: auto;        /* Ajusta del texto */
-  max-width: max-content; /* Para que no se estire */
-  min-width: 0;       /* Evita que se contraiga */
+  max-width: max-content; /* Para que no se estire */       /* Evita que se contraiga */
 
   cursor: pointer;
   transition: all 0.2s ease-in-out;

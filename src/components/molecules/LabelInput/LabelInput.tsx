@@ -4,7 +4,6 @@ import type { LabelInputProps } from './LabelInput.model';
 import styles from './LabelInput.module.css'
 
 export const LabelInput = ({
-    fontFamily,
     type,
     placeholder,
     width,
@@ -21,15 +20,13 @@ export const LabelInput = ({
         "--fontSize": fontSize,
         "--padding": padding,
         "--placeholder": placeholder,
-        "--fontFamily": fontFamily,
         "--bgColor":bgColor
-    };
+    } as React.CSSProperties;
     return (
         <>
         <div style={styleProperties} className={styles.container}>
             <Label
                 textLabel="Usuario"
-                fontFamily="Open Sans"
             />
             <Input
                 type="text"
@@ -37,7 +34,6 @@ export const LabelInput = ({
                 width="20rem"
                 height="6vh"
                 padding="0px 10px"
-                fontFamily="Open Sans"
             />
         </div>
         </>

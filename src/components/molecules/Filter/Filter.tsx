@@ -9,7 +9,6 @@ export const Filter = ({
     height,
     bgColor,
     borderShadow,
-    fontFamily,
     fontSize,
     fontWeight,
     color
@@ -19,7 +18,6 @@ export const Filter = ({
         "--height": height,
         "--bgColor": bgColor,
         "--borderShadow": borderShadow,
-        "--fontFamily": fontFamily,
         "--fontSize": fontSize,
         "--fontWeight": fontWeight,
         "--color": color

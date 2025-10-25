@@ -8,7 +8,7 @@
     font-size: var(--fontSize, 16px);
     color: var(--color, rgb(255, 255, 255));
     background: var(--bgColor, #4CAF5095);
-    font-family: "Open Sans";
+    
 }
 
 .Btn::placeholder {

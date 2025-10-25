@@ -15,8 +15,8 @@ export const TitleSubtitle = ({
                 <Title />
                 <Label
                     textLabel="Productos"
-                    fontFamily="Open Sans"
                     fontSize="32px"
+                    fontWeight="bold"
                 />
             </div>
         </>

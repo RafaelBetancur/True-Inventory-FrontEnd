@@ -3,7 +3,6 @@ export interface FilterProps {
     height?:string;
     bgColor?:string;
     borderShadow?:string;
-    fontFamily?:string;
     fontSize?:string;
     fontWeight?:string;
     color?:string;

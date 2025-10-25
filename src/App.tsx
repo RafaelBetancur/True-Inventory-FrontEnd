@@ -1,13 +1,12 @@
 import './App.css'
-import { PublicProducts } from './components/organism'
+import { Login, PublicProducts } from './components/organism'
 
 
 function App() {
   return (
     <>
-      <PublicProducts
-        
-      />
+      {/*<Login></Login>*/}
+      <PublicProducts/>
     </>
   )
 }
