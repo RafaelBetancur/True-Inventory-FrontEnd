@@ -1,0 +1,5 @@
+h1{
+    font-size: var(--fontSize, 64px);
+    font-family: var(--fontFamily, "Lilita One");
+    color: var(--color, #262626);
+}

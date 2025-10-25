@@ -1,0 +1,5 @@
+.label{
+    font-size: var(--fontSize,"16px");
+    font-weight: var(--fontWeight, 0px);
+    color: var(--color,black);
+}

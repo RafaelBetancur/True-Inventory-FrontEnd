@@ -1,0 +1,3 @@
+.container{
+    width: var(--width, 100%);
+}
