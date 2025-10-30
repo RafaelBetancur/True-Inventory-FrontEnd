@@ -11,7 +11,8 @@ export const LabelInput = ({
     color,
     fontSize,
     padding,
-    bgColor
+    bgColor,
+    textLabel
 }: LabelInputProps) => {
     const styleProperties = {
         "--width": width,
@@ -19,18 +20,17 @@ export const LabelInput = ({
         "--color": color,
         "--fontSize": fontSize,
         "--padding": padding,
-        "--placeholder": placeholder,
         "--bgColor":bgColor
     } as React.CSSProperties;
     return (
         <>
         <div style={styleProperties} className={styles.container}>
             <Label
-                textLabel="Usuario"
+                textLabel={textLabel}
             />
             <Input
                 type="text"
-                placeholder="Ingrese su usuario"
+                placeholder={placeholder}
                 width="20rem"
                 height="6vh"
                 padding="0px 10px"
