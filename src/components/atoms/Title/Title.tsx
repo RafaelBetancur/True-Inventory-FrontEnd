@@ -6,7 +6,7 @@ export const Title = ({
     fontFamily,
     color,
     width,
-    height
+    height,
 }: TitleProps) => {
     const styleProperties = {
         "--fontSize":fontSize,

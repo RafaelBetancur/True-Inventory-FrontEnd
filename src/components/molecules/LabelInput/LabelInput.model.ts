@@ -7,4 +7,5 @@ export interface LabelInputProps {
     fontSize?: string;
     padding?: string;
     bgColor?: string;
+    textLabel?:string;
 }

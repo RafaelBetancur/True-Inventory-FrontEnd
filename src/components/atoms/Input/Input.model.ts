@@ -6,4 +6,6 @@ export interface InputProps {
   color?: string;
   fontSize?: string;
   padding?: string;
+  value?: string;
+  onChange?: (e: React.ChangeEvent<HTMLInputElement>) => void;
 }

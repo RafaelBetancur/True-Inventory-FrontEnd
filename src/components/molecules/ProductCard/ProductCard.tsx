@@ -1,9 +1,9 @@
 import { Button, Categories, Label } from "../../atoms";
 import type { ProductCardProps } from "./ProductCard.model";
 import styles from './ProductCard.module.css';
+import { useNavigate } from 'react-router-dom';
 
 export const ProductCard = ({
-  isAdmin = false,
   onDelete,
   width,
   bgColor,
@@ -16,7 +16,9 @@ export const ProductCard = ({
   description,
   image,
   price,
-  quantity
+  quantity,
+  category,
+  isAdmin
 }: ProductCardProps) => {
 
   const styleProperties = {
@@ -29,10 +31,12 @@ export const ProductCard = ({
     "--color": color
   } as React.CSSProperties;
 
+  const navigate = useNavigate();
+
   return (
     <div style={styleProperties} className={styles.container}>
       <div className={styles.imgBox}>
-        <img className={styles.img} src={image}/>
+        <img className={styles.img} src={image} alt={name} />
       </div>
 
       <div className={styles.descriptionBox}>
@@ -43,18 +47,16 @@ export const ProductCard = ({
             fontWeight="bold"
             color="#333"
           />
-          <p>
-            {description}
-          </p>
+          <p>{description}</p>
         </div>
         <div className={styles.categoriesContainer}>
-          <Categories text="Moda" />
+          <Categories text={category || "Sin categoría"} />
         </div>
       </div>
 
       <div className={styles.priceBox}>
-        <Label textLabel={price+"$"} fontSize="32px" fontWeight="bold" color="#333" />
-        <Label textLabel={quantity+" Unidades"} fontSize="16px" color="#333" />
+        <Label textLabel={price + "$"} fontSize="32px" fontWeight="bold" color="#333" />
+        <Label textLabel={quantity + " Unidades"} fontSize="16px" color="#333" />
 
         {isAdmin && (
           <div className={styles.actions}>
@@ -65,6 +67,17 @@ export const ProductCard = ({
               bgColor="#FF8D1B90"
               borderColor="#FF8D1B"
               color="white"
+              onClick={() =>
+                navigate('/update', {
+                  state: {
+                    name,
+                    description,
+                    image,
+                    price,
+                    quantity,
+                  },
+                })
+              }
             />
             <Button
               value="Eliminar producto"
