@@ -2,13 +2,15 @@ import type { InputProps } from './Input.model'
 import style from './Input.module.css'
 
 export const Input = ({
-  type, 
-  placeholder, 
-  width, 
-  height, 
-  color, 
-  fontSize, 
-  padding
+  type,
+  placeholder,
+  width,
+  height,
+  color,
+  fontSize,
+  padding,
+  value,
+  onChange
 }: InputProps) => {
   const styleProperties = {
     "--width": width,
@@ -21,7 +23,13 @@ export const Input = ({
   return (
     <>
       <div style={styleProperties} className={`input-group mb-3 ${style.input}`}>
-        <input type={type} placeholder={placeholder} className={`form-control`}/>
+        <input
+          type={type}
+          placeholder={placeholder}
+          className={`form-control`}
+          value={value}
+          onChange={onChange}
+        />
       </div>
     </>
   )

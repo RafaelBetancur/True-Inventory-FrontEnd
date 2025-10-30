@@ -12,10 +12,10 @@ export const Scroll = ({
         "--width": width,
         "--height": height,
         "--color": color
-    };
+    } as React.CSSProperties;
     return (
         <>
-            <div styles={styleProperties}>
+            <div style={styleProperties}>
                 <div className={`overflow-auto border p-3 ${styles.scroll}`}>
                     <p>Texto o contenido largo...</p>
                     <p>Texto o contenido largo...</p>

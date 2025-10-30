@@ -13,7 +13,7 @@
 
 .Btn::placeholder {
     color: var(--placeholder, #ffffff);
-    opacity: 1; /* ensure consistent placeholder visibility */
+    opacity: 1;
 }
 
 .Btn:focus {

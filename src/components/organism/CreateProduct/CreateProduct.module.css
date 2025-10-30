@@ -1,0 +1,80 @@
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+}
+
+.leftContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+.rightContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;    
+    width: 75%;
+    background:
+        linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 25%),
+        radial-gradient(circle at 20% 30%, rgb(255, 255, 255), transparent 50%),
+        radial-gradient(circle at 80% 20%, rgb(173, 216, 230), transparent 60%),
+        radial-gradient(circle at 50% 80%, rgba(0, 255, 242, 0.541), transparent 60%),
+        #3498db;
+    background-size: cover;
+    background-blend-mode: lighten;
+}
+
+.rightContainer>img{
+    width: 85%;
+}
+
+.labelBox {
+    display: flex;
+    justify-content: center;
+}
+
+.inputsBox {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 25px;
+}
+.formBox {
+    justify-content: center;
+    width: 80%;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 0 16px rgba(0, 0, 0, 0.3);
+
+}
+
+.bottoms {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 10px;
+}
+
+.dropzone {
+  border: 1px solid #387EFF70;
+  border-radius: 12px;
+  padding: 2rem;
+  text-align: center;
+  color: #555;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.dropzone:hover {
+  background-color: #387eff10;
+}
+
+.dropzone span {
+  font-size: 14px;
+}
